@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>at.fhv</groupId>
+	<artifactId>mail-verify-uml</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<properties>
+		<!-- version -->
+		<acceleo.version>3.6.4</acceleo.version>
+
+		<!-- generator settings -->
+		<generator.main.class>at.fhv.mail_verify.generator.main.Main</generator.main.class>
+		<generator.uml.model>mail-verify-uml.uml</generator.uml.model>
+		<generator.output.directory>../mail-verify-backend</generator.output.directory>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>Eclipse - Acceleo Groups</id>
+			<url>https://repo.eclipse.org/content/groups/releases</url>
+		</repository>
+		<repository>
+			<id>Eclipse - Acceleo Snapshots</id>
+			<url>https://repo.eclipse.org/content/repositories/acceleo-snapshots</url>
+		</repository>
+		<repository>
+			<id>Eclipse - Acceleo Release</id>
+			<url>https://repo.eclipse.org/content/repositories/acceleo-releases</url>
+		</repository>
+		<repository>
+			<id>hnfhtw-mail_verify</id>
+			<url>https://packagecloud.io/hnfhtw/mail_verify/maven2</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>Eclipse - Acceleo Groups</id>
+			<url>https://repo.eclipse.org/content/groups/releases</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>Eclipse - Acceleo Snapshots</id>
+			<url>https://repo.eclipse.org/content/repositories/acceleo-snapshots</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>Eclipse - Acceleo Release</id>
+			<url>https://repo.eclipse.org/content/repositories/acceleo-releases</url>
+		</pluginRepository>
+	<pluginRepository>
+			<id>hnfhtw-mail_verify</id>
+			<url>https://packagecloud.io/hnfhtw/mail_verify/maven2</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.acceleo</groupId>
+				<artifactId>org.eclipse.acceleo.maven.launcher</artifactId>
+				<version>${acceleo.version}</version>
+				<executions>
+					<execution>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>acceleo-launcher</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<generatorClass>${generator.main.class}</generatorClass>
+					<model>${generator.uml.model}</model>
+					<outputFolder>${generator.output.directory}</outputFolder>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>at.fhv</groupId>
+						<artifactId>mail-verify-generator</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+</project>

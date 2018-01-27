@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mailverifyumlprofile="http:///schemas/mailverifyumlprofile/_V5bxIAKWEeinjaI_1Iw9vw/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/mailverifyumlprofile/_V5bxIAKWEeinjaI_1Iw9vw/1 mail-verify-uml.profile.uml#_V5dmUAKWEeinjaI_1Iw9vw">
+  <uml:Model xmi:id="_rUXlgAKSEeinjaI_1Iw9vw" name="mail-verify-uml" URI="src/main/java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_f9lWoAKWEeinjaI_1Iw9vw" name="at.fhv.mail_verify">
+      <packagedElement xmi:type="uml:Package" xmi:id="_yQP1sAKWEeinjaI_1Iw9vw" name="endpoints">
+        <packagedElement xmi:type="uml:Class" xmi:id="_9uqZwAKWEeinjaI_1Iw9vw" name="VerificationEndpoint">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_iGTrwAKYEeinjaI_1Iw9vw" name="verify">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3sbfoAKYEeinjaI_1Iw9vw" name="mailAd">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_IaxFMAKZEeinjaI_1Iw9vw" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_tJDDoAKcEeinjaI_1Iw9vw" type="_wxZKsAKZEeinjaI_1Iw9vw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_8JdHwAKcEeinjaI_1Iw9vw" name="HistoryEndpoint">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Bam4UAKdEeinjaI_1Iw9vw" name="getHistory">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NHFtkAKdEeinjaI_1Iw9vw" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Qkx8cAKdEeinjaI_1Iw9vw" type="_n1wFYAKZEeinjaI_1Iw9vw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CyWGsALyEei2xvQT_3_71w" name="AuthEndpoint">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NOKlUALyEei2xvQT_3_71w" name="login">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TLQO0ALyEei2xvQT_3_71w" name="userMail">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_YQg4cALyEei2xvQT_3_71w" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ak-OYALyEei2xvQT_3_71w" name="logout">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_eSgQEALyEei2xvQT_3_71w" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0wchkAKWEeinjaI_1Iw9vw" name="handlers">
+        <packagedElement xmi:type="uml:Class" xmi:id="_KRlqoAKeEeinjaI_1Iw9vw" name="VerificationHandler">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_zMh-IAKeEeinjaI_1Iw9vw" name="verify">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2KcgwAKeEeinjaI_1Iw9vw" name="mailAd">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_38nB8AKeEeinjaI_1Iw9vw" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6gFEQAKeEeinjaI_1Iw9vw" type="_wxZKsAKZEeinjaI_1Iw9vw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ApGQ8AKfEeinjaI_1Iw9vw" name="HistoryHandler">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ENrK8AKfEeinjaI_1Iw9vw" name="getHistory">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_JJkdMAKfEeinjaI_1Iw9vw" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_LBHNoAKfEeinjaI_1Iw9vw" type="_n1wFYAKZEeinjaI_1Iw9vw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Lp4d0AKfEeinjaI_1Iw9vw" name="addHistory">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Og68YAKfEeinjaI_1Iw9vw" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_UPclcAKfEeinjaI_1Iw9vw" name="addr">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_WCl-EAKfEeinjaI_1Iw9vw" name="result" type="_wxZKsAKZEeinjaI_1Iw9vw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_heyl4ALyEei2xvQT_3_71w" name="AuthHandler">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_1Cz_IALyEei2xvQT_3_71w" name="login">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_45_FAALyEei2xvQT_3_71w" name="userMail">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6kgGEALyEei2xvQT_3_71w" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_789GwALyEei2xvQT_3_71w" name="logout">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_-oZZUALyEei2xvQT_3_71w" name="token">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cclNsAKZEeinjaI_1Iw9vw" name="models">
+        <packagedElement xmi:type="uml:Class" xmi:id="_n1wFYAKZEeinjaI_1Iw9vw" name="History">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NZ4jMgKcEeinjaI_1Iw9vw" name="items" visibility="private" type="_tlFmwAKZEeinjaI_1Iw9vw" isUnique="false" association="_NZ38IAKcEeinjaI_1Iw9vw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NZ4jMwKcEeinjaI_1Iw9vw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NZ4jNAKcEeinjaI_1Iw9vw" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_tlFmwAKZEeinjaI_1Iw9vw" name="HistoryItem">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0wA8YAKZEeinjaI_1Iw9vw" name="mailAd" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6I6TsAKZEeinjaI_1Iw9vw" name="requestDate" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_BePZUALYEeilnrr7mIflMg" value="0"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DIoyUgKbEeinjaI_1Iw9vw" name="result" type="_wxZKsAKZEeinjaI_1Iw9vw" association="_DIoLQAKbEeinjaI_1Iw9vw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DIoyUwKbEeinjaI_1Iw9vw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIoyVAKbEeinjaI_1Iw9vw" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_wxZKsAKZEeinjaI_1Iw9vw" name="VerResult">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eXiCAAKaEeinjaI_1Iw9vw" name="result" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_sBCN4AL4Eei2xvQT_3_71w" name="false"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E1-V4ALzEei2xvQT_3_71w" name="User">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JIlakALzEei2xvQT_3_71w" name="userMail" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UmBHMALzEei2xvQT_3_71w" name="history" visibility="private" type="_n1wFYAKZEeinjaI_1Iw9vw" association="_Ul4kUALzEei2xvQT_3_71w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UmCVUALzEei2xvQT_3_71w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UmCVUQLzEei2xvQT_3_71w" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DIoLQAKbEeinjaI_1Iw9vw" visibility="private" memberEnd="_DIoyUgKbEeinjaI_1Iw9vw _DIpZYAKbEeinjaI_1Iw9vw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DIoyUAKbEeinjaI_1Iw9vw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DIoyUQKbEeinjaI_1Iw9vw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DIpZYAKbEeinjaI_1Iw9vw" type="_tlFmwAKZEeinjaI_1Iw9vw" association="_DIoLQAKbEeinjaI_1Iw9vw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NZ38IAKcEeinjaI_1Iw9vw" visibility="private" memberEnd="_NZ4jMgKcEeinjaI_1Iw9vw _NZ4jNQKcEeinjaI_1Iw9vw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NZ4jMAKcEeinjaI_1Iw9vw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NZ4jMQKcEeinjaI_1Iw9vw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NZ4jNQKcEeinjaI_1Iw9vw" type="_n1wFYAKZEeinjaI_1Iw9vw" association="_NZ38IAKcEeinjaI_1Iw9vw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ul4kUALzEei2xvQT_3_71w" visibility="public" memberEnd="_UmBHMALzEei2xvQT_3_71w _UmC8YALzEei2xvQT_3_71w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ul_SAALzEei2xvQT_3_71w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ul_SAQLzEei2xvQT_3_71w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UmC8YALzEei2xvQT_3_71w" type="_E1-V4ALzEei2xvQT_3_71w" association="_Ul4kUALzEei2xvQT_3_71w"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_wL7fcAKUEeinjaI_1Iw9vw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VQrdIAKYEeinjaI_1Iw9vw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VQrdIQKYEeinjaI_1Iw9vw" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VQrdIgKYEeinjaI_1Iw9vw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VQrdIwKYEeinjaI_1Iw9vw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VQrdJAKYEeinjaI_1Iw9vw" key="Date" value="2018-01-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VQrdJQKYEeinjaI_1Iw9vw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wL8GgAKUEeinjaI_1Iw9vw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="mail-verify-uml.profile.uml#_V5dmUAKWEeinjaI_1Iw9vw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="mail-verify-uml.profile.uml#_KMWw4AKUEeinjaI_1Iw9vw"/>
+    </profileApplication>
+  </uml:Model>
+  <mailverifyumlprofile:Endpoint xmi:id="_Xg-EwAKYEeinjaI_1Iw9vw" base_Class="_9uqZwAKWEeinjaI_1Iw9vw"/>
+  <mailverifyumlprofile:Write xmi:id="_ld0aIAKYEeinjaI_1Iw9vw" base_Operation="_iGTrwAKYEeinjaI_1Iw9vw" path="/verify"/>
+  <mailverifyumlprofile:Model xmi:id="_s1QFQAKZEeinjaI_1Iw9vw" base_Class="_n1wFYAKZEeinjaI_1Iw9vw"/>
+  <mailverifyumlprofile:Model xmi:id="_tlJRMgKZEeinjaI_1Iw9vw" base_Class="_tlFmwAKZEeinjaI_1Iw9vw"/>
+  <mailverifyumlprofile:Model xmi:id="_wxcOCgKZEeinjaI_1Iw9vw" base_Class="_wxZKsAKZEeinjaI_1Iw9vw"/>
+  <mailverifyumlprofile:Endpoint xmi:id="_AKtWsAKdEeinjaI_1Iw9vw" base_Class="_8JdHwAKcEeinjaI_1Iw9vw"/>
+  <mailverifyumlprofile:Read xmi:id="_HJoQoAKdEeinjaI_1Iw9vw" base_Operation="_Bam4UAKdEeinjaI_1Iw9vw" path="/history"/>
+  <mailverifyumlprofile:Handler xmi:id="_Mj988AKeEeinjaI_1Iw9vw" base_Class="_KRlqoAKeEeinjaI_1Iw9vw"/>
+  <mailverifyumlprofile:Handler xmi:id="_CnLHMAKfEeinjaI_1Iw9vw" base_Class="_ApGQ8AKfEeinjaI_1Iw9vw"/>
+  <mailverifyumlprofile:Endpoint xmi:id="_JXRMQALyEei2xvQT_3_71w" base_Class="_CyWGsALyEei2xvQT_3_71w"/>
+  <mailverifyumlprofile:Write xmi:id="_ZpVskALyEei2xvQT_3_71w" base_Operation="_NOKlUALyEei2xvQT_3_71w" path="/login"/>
+  <mailverifyumlprofile:Handler xmi:id="_wo1HIALyEei2xvQT_3_71w" base_Class="_heyl4ALyEei2xvQT_3_71w"/>
+  <mailverifyumlprofile:Write xmi:id="_zc2G4ALyEei2xvQT_3_71w" base_Operation="_ak-OYALyEei2xvQT_3_71w" path="/logut"/>
+  <mailverifyumlprofile:Model xmi:id="_GK_BAALzEei2xvQT_3_71w" base_Class="_E1-V4ALzEei2xvQT_3_71w"/>
+</xmi:XMI>
