@@ -5,7 +5,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_yQP1sAKWEeinjaI_1Iw9vw" name="endpoints">
         <packagedElement xmi:type="uml:Class" xmi:id="_9uqZwAKWEeinjaI_1Iw9vw" name="VerificationEndpoint">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_iGTrwAKYEeinjaI_1Iw9vw" name="verify">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3sbfoAKYEeinjaI_1Iw9vw" name="mailAd">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3sbfoAKYEeinjaI_1Iw9vw" name="mailad">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_IaxFMAKZEeinjaI_1Iw9vw" name="token">
@@ -24,7 +24,7 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_CyWGsALyEei2xvQT_3_71w" name="AuthEndpoint">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_NOKlUALyEei2xvQT_3_71w" name="login">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TLQO0ALyEei2xvQT_3_71w" name="userMail">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TLQO0ALyEei2xvQT_3_71w" name="usermail">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_YQg4cALyEei2xvQT_3_71w" direction="return">
@@ -41,7 +41,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_0wchkAKWEeinjaI_1Iw9vw" name="handlers">
         <packagedElement xmi:type="uml:Class" xmi:id="_KRlqoAKeEeinjaI_1Iw9vw" name="VerificationHandler">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_zMh-IAKeEeinjaI_1Iw9vw" name="verify">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2KcgwAKeEeinjaI_1Iw9vw" name="mailAd">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2KcgwAKeEeinjaI_1Iw9vw" name="mailad">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_38nB8AKeEeinjaI_1Iw9vw" name="token">
@@ -61,7 +61,7 @@
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_Og68YAKfEeinjaI_1Iw9vw" name="token">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_UPclcAKfEeinjaI_1Iw9vw" name="addr">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_UPclcAKfEeinjaI_1Iw9vw" name="mailad">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_WCl-EAKfEeinjaI_1Iw9vw" name="result" type="_wxZKsAKZEeinjaI_1Iw9vw"/>
@@ -69,7 +69,7 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_heyl4ALyEei2xvQT_3_71w" name="AuthHandler">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_1Cz_IALyEei2xvQT_3_71w" name="login">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_45_FAALyEei2xvQT_3_71w" name="userMail">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_45_FAALyEei2xvQT_3_71w" name="usermail">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_6kgGEALyEei2xvQT_3_71w" direction="return">
@@ -91,10 +91,10 @@
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_tlFmwAKZEeinjaI_1Iw9vw" name="HistoryItem">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_0wA8YAKZEeinjaI_1Iw9vw" name="mailAd" visibility="private">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0wA8YAKZEeinjaI_1Iw9vw" name="mailad" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_6I6TsAKZEeinjaI_1Iw9vw" name="requestDate" visibility="private">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6I6TsAKZEeinjaI_1Iw9vw" name="requestdate" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_BePZUALYEeilnrr7mIflMg" value="0"/>
           </ownedAttribute>
@@ -110,7 +110,7 @@
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_E1-V4ALzEei2xvQT_3_71w" name="User">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_JIlakALzEei2xvQT_3_71w" name="userMail" visibility="private">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JIlakALzEei2xvQT_3_71w" name="usermail" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_UmBHMALzEei2xvQT_3_71w" name="history" visibility="private" type="_n1wFYAKZEeinjaI_1Iw9vw" association="_Ul4kUALzEei2xvQT_3_71w">
