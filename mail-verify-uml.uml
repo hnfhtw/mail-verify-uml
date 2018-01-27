@@ -164,6 +164,6 @@
   <mailverifyumlprofile:Endpoint xmi:id="_JXRMQALyEei2xvQT_3_71w" base_Class="_CyWGsALyEei2xvQT_3_71w"/>
   <mailverifyumlprofile:Write xmi:id="_ZpVskALyEei2xvQT_3_71w" base_Operation="_NOKlUALyEei2xvQT_3_71w" path="/login"/>
   <mailverifyumlprofile:Handler xmi:id="_wo1HIALyEei2xvQT_3_71w" base_Class="_heyl4ALyEei2xvQT_3_71w"/>
-  <mailverifyumlprofile:Write xmi:id="_zc2G4ALyEei2xvQT_3_71w" base_Operation="_ak-OYALyEei2xvQT_3_71w" path="/logut"/>
+  <mailverifyumlprofile:Write xmi:id="_zc2G4ALyEei2xvQT_3_71w" base_Operation="_ak-OYALyEei2xvQT_3_71w" path="/logout"/>
   <mailverifyumlprofile:Model xmi:id="_GK_BAALzEei2xvQT_3_71w" base_Class="_E1-V4ALzEei2xvQT_3_71w"/>
 </xmi:XMI>
