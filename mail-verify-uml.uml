@@ -40,7 +40,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_0wchkAKWEeinjaI_1Iw9vw" name="handlers">
         <packagedElement xmi:type="uml:Class" xmi:id="_KRlqoAKeEeinjaI_1Iw9vw" name="VerificationHandler">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_zMh-IAKeEeinjaI_1Iw9vw" name="verif">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_zMh-IAKeEeinjaI_1Iw9vw" name="verify">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_2KcgwAKeEeinjaI_1Iw9vw" name="mailad">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
@@ -116,6 +116,9 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_UmBHMALzEei2xvQT_3_71w" name="history" visibility="private" type="_n1wFYAKZEeinjaI_1Iw9vw" association="_Ul4kUALzEei2xvQT_3_71w">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UmCVUALzEei2xvQT_3_71w" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UmCVUQLzEei2xvQT_3_71w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TYUrgAs3EeiGuMtLPp8k-A" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
