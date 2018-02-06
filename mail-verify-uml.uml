@@ -117,9 +117,6 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UmCVUALzEei2xvQT_3_71w" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UmCVUQLzEei2xvQT_3_71w" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_TYUrgAs3EeiGuMtLPp8k-A" name="name">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
         </packagedElement>
       </packagedElement>
     </packagedElement>
