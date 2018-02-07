@@ -383,6 +383,10 @@
                 <element xmi:type="uml:Property" href="mail-verify-uml.uml#_JIlakALzEei2xvQT_3_71w"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_JI6KsQLzEei2xvQT_3_71w"/>
               </children>
+              <children xmi:type="notation:Shape" xmi:id="_1F1dAAv9Eei4k6mVQZBh5A" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="mail-verify-uml.uml#_0_bTAAv9Eei4k6mVQZBh5A"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_1F1dAQv9Eei4k6mVQZBh5A"/>
+              </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_E2O0kwLzEei2xvQT_3_71w"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_E2O0lALzEei2xvQT_3_71w"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_E2O0lQLzEei2xvQT_3_71w"/>
